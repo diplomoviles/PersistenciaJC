@@ -74,6 +74,8 @@ fun MainScreen() {
         topBar = {
             MyTopBar(){ newColor ->
                 bgColor = newColor
+                //Escribimos en shared preferences
+                SpHelper.writeBgColor(newColor)
             }
         },
         floatingActionButton = {
